@@ -34,18 +34,22 @@ At no point is the plaintext password exposed or transmitted.
 ## Requirements
 
 - Python 3.x
-- pip install -r requirements.txt
+- `requests` Python library
 - Internet connection (for HIBP API access)
 
 ---
 
 ## Installation
 
-Clone the repository:
+#### Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/password-breach-checker.git
+git clone https://github.com/net-bar-security/password-breach-checker.git
 cd password-breach-checker
+```
+#### Install dependencies:
+```bash
+pip install -r requirements.txt
 ```
 ---
 
