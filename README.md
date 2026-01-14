@@ -45,11 +45,10 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/<your-username>/password-breach-checker.git
-cd password-breach-checker```
-
+cd password-breach-checker
+```
 ---
 
-```markdown
 ## Security & Privacy Notes
 
 - Full passwords are **never transmitted**
