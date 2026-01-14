@@ -34,7 +34,7 @@ At no point is the plaintext password exposed or transmitted.
 ## Requirements
 
 - Python 3.x
-- `requests` Python library
+- pip install -r requirements.txt
 - Internet connection (for HIBP API access)
 
 ---
