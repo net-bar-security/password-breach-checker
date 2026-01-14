@@ -75,3 +75,10 @@ Misuse of this tool may violate privacy, ethical guidelines, or organizational p
 
 This project is licensed under the **MIT License**.  
 See the `LICENSE` file for details.
+
+---
+
+## Author
+
+### **Netzer Bar-On**
+GitHub: https://github.com/net-bar-security
