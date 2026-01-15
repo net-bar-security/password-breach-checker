@@ -188,7 +188,9 @@ Your password will not be visible while typing:
 This is **expected and secure behavior**.
 The script uses Python’s `getpass` module to prevent shoulder-surfing and screen logging.
 
-When prompted: ```css Enter your password to check for breaches: ``` Type your password normally and press `Enter`.
+When prompted: 
+```css 
+Enter your password to check for breaches:``` Type your password normally and press `Enter`.
 
 ### Step 5: Review the Result
 
