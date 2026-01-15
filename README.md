@@ -31,26 +31,117 @@ At no point is the plaintext password exposed or transmitted.
 
 ---
 
+## Usage Instructions for Password Breach Checker
+
+This guide will walk you through the steps to run the Password Breach Checker script. This tool allows you to check if your password has been compromised in known data breaches.
+
 ## Requirements
 
-- Python 3.x
-- `requests` Python library
-- Internet connection (for HIBP API access)
+- **Python 3.x**
+- **Internet connection** (required for HIBP API access)
+- **requests >= 2.25.0** (already listed in `requirements.txt`)
+- **Git** (optional, only required if cloning the repository)
 
 ---
 
-## Installation
+## Step-by-Step Installation Guide
 
-#### Clone the repository:
+### Step 1: Install Python 3
+
+#### Windows
+1. Download Python from: https://www.python.org/downloads/
+2. During installation, check **“Add Python to PATH”**
+3. Verify installation:
+   ```bash
+   python --version
+**Linux** (Debian / Ubuntu / Kali)
+```bash
+
+sudo apt update
+sudo apt install python3 python3-pip -y
+python3 --version```
+
+**macOS**
+```bash
+brew install python
+python3 --version```
+
+### Step 2 (Optional): Install Git
+Git is only required if you want to clone the repository.
+
+**Windows**
+Download Git from: https://git-scm.com/download/win
+Verify:
 
 ```bash
+
+git --version```
+
+**Linux**
+```bash
+
+sudo apt install git -y```
+
+**macOS**
+```bash
+
+brew install git```
+
+### Installation Methods
+**Method A: Clone the Repository (Recommended)**
+```bash
+
 git clone https://github.com/net-bar-security/password-breach-checker.git
-cd password-breach-checker
-```
-#### Install dependencies:
+cd password-breach-checker```
+
+**Method B: Download Without Git**
+Open: https://github.com/net-bar-security/password-breach-checker
+
+Click Code → Download ZIP
+
+Extract the ZIP file
+
+Open a terminal in the extracted folder
+
+#### Install Dependencies
+The repository already includes a requirements.txt file.
+
 ```bash
-pip install -r requirements.txt
-```
+
+pip install -r requirements.txt```
+If pip points to Python 2 on your system, use:
+
+```bash
+
+pip3 install -r requirements.txt```
+
+---
+
+## Usage
+Run the script from the project directory:
+
+```bash
+
+python password_breach_checker.py```
+or
+
+```bash
+
+python3 password_breach_checker.py```
+You will be prompted to enter a password securely.
+The script will report whether the password was found in known data breaches and how many times it appeared.
+
+Example Output
+```text
+
+Enter password to check:
+Password found in breaches!
+Times seen: 15234```
+or
+
+```text
+
+Good news — no breach found for this password.```
 ---
 
 ## Security & Privacy Notes
