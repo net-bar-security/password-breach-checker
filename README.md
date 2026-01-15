@@ -198,9 +198,10 @@ The script will report one of the following:
 - Network or API error (e.g., no internet connection)
 
 Example output:
+
 **`WARNING: Your password has been found in 3 known data breaches!`**
 OR
-> **`Recommendation: Change your password immediately`**
+**`Recommendation: Change your password immediately`**
 
 ---
 
