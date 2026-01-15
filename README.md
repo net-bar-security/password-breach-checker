@@ -188,7 +188,7 @@ Your password will not be visible while typing:
 This is **expected and secure behavior**.
 The script uses Python’s `getpass` module to prevent shoulder-surfing and screen logging.
 
-When prompted: > **Enter your password to check for breaches:** Type your password normally and press `Enter`.
+When prompted: `Enter your password to check for breaches:` type your password normally and press `Enter`.
 
 ### Step 5: Review the Result
 
@@ -198,10 +198,9 @@ The script will report one of the following:
 - Network or API error (e.g., no internet connection)
 
 Example output:
-
-**WARNING: Your password has been found in 3 known data breaches!**
+**`WARNING: Your password has been found in 3 known data breaches!`**
 OR
-**Recommendation: Change your password immediately**
+> **`Recommendation: Change your password immediately`**
 
 ---
 
