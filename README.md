@@ -53,18 +53,20 @@ This guide will walk you through the steps to run the Password Breach Checker sc
 2. During installation, check **“Add Python to PATH”**
 3. Verify installation:
    ```bash
-   python --version
+   python --version```
+   
 **Linux** (Debian / Ubuntu / Kali)
 ```bash
-
 sudo apt update
 sudo apt install python3 python3-pip -y
-python3 --version```
+python3 --version
+```
 
 **macOS**
 ```bash
 brew install python
-python3 --version```
+python3 --version
+```
 
 ### Step 2 (Optional): Install Git
 Git is only required if you want to clone the repository.
@@ -74,46 +76,45 @@ Download Git from: https://git-scm.com/download/win
 Verify:
 
 ```bash
-
-git --version```
+git --version
+```
 
 **Linux**
 ```bash
-
-sudo apt install git -y```
+sudo apt install git -y
+```
 
 **macOS**
 ```bash
 
-brew install git```
+brew install git
+```
 
 ### Installation Methods
 **Method A: Clone the Repository (Recommended)**
 ```bash
 
 git clone https://github.com/net-bar-security/password-breach-checker.git
-cd password-breach-checker```
+cd password-breach-checker
+```
 
 **Method B: Download Without Git**
-Open: https://github.com/net-bar-security/password-breach-checker
-
-Click Code → Download ZIP
-
-Extract the ZIP file
-
-Open a terminal in the extracted folder
+1. Open: https://github.com/net-bar-security/password-breach-checker
+2. Click Code → Download ZIP
+3. Extract the ZIP file
+4. Open a terminal in the extracted folder
 
 #### Install Dependencies
 The repository already includes a requirements.txt file.
 
 ```bash
-
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 If pip points to Python 2 on your system, use:
 
 ```bash
-
-pip3 install -r requirements.txt```
+pip3 install -r requirements.txt
+```
 
 ---
 
@@ -122,12 +123,14 @@ Run the script from the project directory:
 
 ```bash
 
-python password_breach_checker.py```
+python password_breach_checker.py
+```
 or
 
 ```bash
 
-python3 password_breach_checker.py```
+python3 password_breach_checker.py
+```
 You will be prompted to enter a password securely.
 The script will report whether the password was found in known data breaches and how many times it appeared.
 
@@ -136,12 +139,14 @@ Example Output
 
 Enter password to check:
 Password found in breaches!
-Times seen: 15234```
+Times seen: 15234
+```
 or
 
 ```text
 
-Good news — no breach found for this password.```
+Good news — no breach found for this password.
+```
 ---
 
 ## Security & Privacy Notes
