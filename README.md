@@ -53,7 +53,8 @@ This guide will walk you through the steps to run the Password Breach Checker sc
 2. During installation, check **“Add Python to PATH”**
 3. Verify installation:
    ```bash
-   python --version```
+   python --version
+   ```
    
 **Linux** (Debian / Ubuntu / Kali)
 ```bash
