@@ -149,11 +149,13 @@ cd password-breach-checker
 
 Verify you are in the correct directory:
 **Linux / macOS**
-```ls
+```bash
+ls
 ```
 
 **Windows**
-```dir
+```bash
+dir
 ```
 
 You should see:
