@@ -74,13 +74,16 @@ def main():
 
     if breach_count is None:
         print("Unable to complete password breach check")
+        input("Press Enter to exit...")  # Wait for user interaction
         exit(2)
     elif breach_count > 0:
         print(f"WARNING: Your password has been found in {breach_count} known data breaches!")
         print("Recommendation: Change your password immediately")
+        input("Press Enter to exit...")  # Wait for user interaction
         exit(1)
     else:
         print("Good news! Your password has not been found in known data breaches.")
+        input("Press Enter to exit...")  # Wait for user interaction
         exit(0)
 
 
