@@ -156,27 +156,31 @@ Verify you are in the correct directory:
 ```
 
 You should see:
-```password_breach_checker.py
-requirements.txt
-README.md
-LICENSE
-```
+- password_breach_checker.py
+- requirements.txt
+- README.md
+- LICENSE
+
 
 ### Step 3: Run the Script
 
 Use one of the following commands:
-```python3 password_breach_checker.py
+```
+python3 password_breach_checker.py
 ```
 or:
-```python password_breach_checker.py
+```
+python password_breach_checker.py
 ```
 Note: On Kali Linux and most Linux distributions, python3 is required.
 
 ### Step 4: Enter Your Password (Important Notice)
 
 When prompted:
-```Enter your password to check for breaches:
 ```
+Enter your password to check for breaches:
+```
+
 Your password will not be visible while typing:
 - No characters
 - No asterisks (*)
@@ -185,7 +189,7 @@ Your password will not be visible while typing:
 This is **expected and secure behavior**.
 The script uses Python’s getpass module to prevent shoulder-surfing and screen logging.
 
-Type your password normally and press **Enter**.
+Type your password normally and press `Enter`.
 
 ### Step 5: Review the Result
 
