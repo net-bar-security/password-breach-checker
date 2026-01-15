@@ -119,34 +119,87 @@ pip3 install -r requirements.txt
 ---
 
 ## Usage
-Run the script from the project directory:
+Follow the instructions below based on your operating system. All commands should be run **from the project directory** (the folder containing `password_breach_checker.py`).
 
+### Step 1: Open a Terminal
+
+#### Linux (Kali, Ubuntu, Debian, etc.)
+- Open **Terminal**
+- Applications → Terminal  
+- Or press `Ctrl + Alt + T`
+
+#### macOS
+- Open **Terminal**
+- Spotlight Search (`Cmd + Space`) → type `Terminal`
+
+#### Windows
+- Open **Command Prompt** or **PowerShell**
+- Press `Win + R` → type `cmd` or `powershell`
+- If using **WSL**, open your Linux terminal instead
+
+---
+
+### Step 2: Navigate to the Project Directory
+
+If you cloned the repository, navigate to it using `cd`:
 ```bash
-
-python password_breach_checker.py
+cd password-breach-checker
 ```
-or
 
-```bash
-
-python3 password_breach_checker.py
+Verify you are in the correct directory:
+**Linux / macOS**
+```ls
 ```
-You will be prompted to enter a password securely.
-The script will report whether the password was found in known data breaches and how many times it appeared.
 
-Example Output
-```text
-
-Enter password to check:
-Password found in breaches!
-Times seen: 15234
+**Windows**
+```dir
 ```
-or
 
-```text
-
-Good news — no breach found for this password.
+You should see:
+```password_breach_checker.py
+requirements.txt
+README.md
+LICENSE
 ```
+
+### Step 3: Run the Script
+
+Use one of the following commands:
+```python3 password_breach_checker.py
+```
+or:
+```python password_breach_checker.py
+```
+Note: On Kali Linux and most Linux distributions, python3 is required.
+
+### Step 4: Enter Your Password (Important Notice)
+
+When prompted:
+```Enter your password to check for breaches:
+```
+Your password will not be visible while typing:
+- No characters
+- No asterisks (*)
+- No dots
+
+This is **expected and secure behavior**.
+The script uses Python’s getpass module to prevent shoulder-surfing and screen logging.
+
+Type your password normally and press **Enter**.
+
+### Step 5: Review the Result
+
+The script will report one of the following:
+- Password not found in known data breaches
+- Password found, including how many times it appeared
+- Network or API error (e.g., no internet connection)
+
+Example output:
+
+**WARNING: Your password has been found in 3 known data breaches!**
+OR
+**Recommendation: Change your password immediately**
+
 ---
 
 ## Security & Privacy Notes
